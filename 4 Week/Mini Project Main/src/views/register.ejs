@@ -1,0 +1,35 @@
+<% if (errorMessage) { %>
+    <div class="alert alert-danger p-4 my-4" role="alert">
+        <%= errorMessage %>
+    </div>
+    <% } %>
+        <div class="container d-flex justify-content-center align-items-center vh-100">
+            <div class="row w-100 flex">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center shadowImg">
+                    <img height="75" src="./assets/Signup.png" class="img-fluid" alt="Register Image">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <form action="/register" method="post" class="bg-white p-4 shadow-lg w-75 rounded text-black">
+                        <h4 class="mt-5 mb-4 text-center">Want to Recruit ? Register Your Account</h4>
+                        <div class="text-center">
+                            <img class="mx-auto h-16 w-auto shadowImg" height="80"
+                                src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Your Company">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn outline-none w-100 bgGradient">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,104 @@
+<div class="container mt-5">
+    <% if (errorMessage) { %>
+        <% let alertClass='alert-warning' ; %>
+            <% if (errorMessage.includes('danger')) { %>
+                <% alertClass='alert-danger' ; %>
+                    <% } else if (errorMessage.includes('success')) { %>
+                        <% alertClass='alert-success' ; %>
+                            <% } %>
+                                <div class="alert <%= alertClass %>">
+                                    <%= errorMessage %>
+                                </div>
+                                <% } %>
+
+                                    <div class="row">
+                                        <% if (jobs) { %>
+                                            <% jobs.forEach(job=> { %>
+                                                <div class="col-md-4 mb-4">
+                                                    <div
+                                                        class="card job-card job-card-hover bg-white border-0 shadow-lg">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">
+                                                                <i class="bi bi-briefcase-fill"></i>
+                                                                <%= job.title %>
+                                                            </h5>
+                                                            <h6 class="card-subtitle mb-2 text-muted">
+                                                                <i class="bi bi-building"></i>
+                                                                <%= job.position %> - <%= job.company %>
+                                                            </h6>
+                                                            <p class="card-text">
+                                                                <i class="bi bi-file-text"></i>
+                                                                <% if (job.description.length> 20) { %>
+                                                                    <%= job.description.substring(0, 40) %>...
+                                                                        <% } else { %>
+                                                                            <%= job.description %>
+                                                                                <% } %>
+                                                            </p>
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">
+                                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                                    <strong>Location:</strong>
+                                                                    <%= job.location %>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <i class="bi bi-currency-dollar"></i>
+                                                                    <strong>Package:</strong>
+                                                                    <%= job.packagePerAnnum %>
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                    <i class="bi bi-tools"></i> <strong>Skills:</strong>
+                                                                    <% if (job.skills.length> 3) { %>
+                                                                        <%= job.skills.slice(0, 3).join(', ') %>...
+                                    <% } else { %>
+                                        <%= job.skills.join(' , ') %>
+                                    <% } %>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-people-fill"></i> <strong>Openings:</strong> <strong class="text-success">
+                                        <%= job.openings %>
+                                    </strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-calendar-check-fill"></i> <strong>Expires:</strong>
+                                    <span class="badge p-2 border-0 text-black bg-warning">
+                                        <%= job.expires %>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-clock-fill"></i> <strong>Posted On:</strong>
+                                    <%= job.postedOn %>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-person-fill"></i> <strong>Posted By:</strong>
+                                    <%= job.postedBy %>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-around align-items-center mt-3">
+                                <a href="/jobs/<%= job.id %>" class="btn btn-primary me-2">
+                                    <i class="bi bi-eye"></i> View 
+                                </a>
+                            <% if (locals.userEmail===job.postedBy) { %>
+                                <a href="/jobs/<%= job.id %>/update" class="btn btn-info me-2">
+                                    <i class="bi bi-pencil"></i> Update
+                                </a>
+                                <form action="/jobs/<%= job.id %>/delete" method="get" class="d-inline">
+                                    <button type="submit" class="btn btn-danger">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+                                </form>
+                                <a href="/jobs/<%= job.id %>/applicants" class="btn btn-warning ms-2">
+                                    <i class="bi bi-file-earmark-text"></i> Applications
+                                </a>
+                                <% } else { %>
+                                    <a href="/apply/<%= job.id %>" class="btn btn-primary">
+                                        <i class="bi bi-box-arrow-in-right"></i> Apply Now
+                                    </a>
+                             <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<% if (job) { %>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header text-center">
+                <h3 class="mb-0">Applicants for <%= job.title %>
+                </h3>
+            </div>
+            <div class="card-body">
+                <% if (job.applicants && job.applicants.length> 0) { %>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Sr. No</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Mobile</th>
+                                <th scope="col">Year of Graduation</th>
+                                <th scope="col">CGPA</th>
+                                <th scope="col">Resume</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% job.applicants.forEach((applicant, index)=> { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= index + 1 %>
+                                    </th>
+                                    <td>
+                                        <%= applicant.name %>
+                                    </td>
+                                    <td>
+                                        <%= applicant.email %>
+                                    </td>
+                                    <td>
+                                        <%= applicant.mobile %>
+                                    </td>
+                                    <td>
+                                        <%= applicant.yearOfGraduation %>
+                                    </td>
+                                    <td>
+                                        <%= applicant.cgpa %>
+                                    </td>
+                                    <td>
+                                        <a href="/<%= applicant.resumeUrl %>"
+                                            class="btn btn-primary bgGradient border-0" target="_blank">
+                                            <i class="bi bi-file-earmark-text-fill"></i> View Resume
+                                        </a>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                    <% } else { %>
+                        <div class="alert alert-info" role="alert">
+                            No applicants have applied for this job yet.
+                        </div>
+                        <% } %>
+            </div>
+        </div>
+    </div>
+
+    <% } %>

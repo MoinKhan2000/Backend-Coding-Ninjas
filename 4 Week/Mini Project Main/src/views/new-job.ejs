@@ -1,0 +1,78 @@
+<div class="container mt-5">
+    <% if (errorMessage) { %>
+        <div class="alert alert-danger">
+            <%= errorMessage %>
+        </div>
+        <% } %>
+            <form action="/new-job" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control border-0" id="title" name="title"
+                                value="<%= job ? job.title : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="position">Position</label>
+                            <input type="text" class="form-control border-0" id="position" name="position"
+                                value="<%= job ? job.position : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="company">Company</label>
+                            <input type="text" class="form-control border-0" id="company" name="company"
+                                value="<%= job ? job.company : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control border-0" id="location" name="location"
+                                value="<%= job ? job.location : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="package">Package</label>
+                            <input type="text" class="form-control border-0" id="package" name="packagePerAnnum"
+                                value="<%= job ? job.packagePerAnnum : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="skills">Skills</label>
+                            <input type="text" class="form-control border-0" id="skills" name="skills"
+                                placeholder="Enter comma separated values" value="<%= job ? job.skills: '' %>" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="description">Description</label>
+                            <textarea class="form-control border-0" id="description" name="description" rows="4"
+                                required><%= job ? job.description : '' %></textarea>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="openings">Openings</label>
+                            <input type="number" class="form-control border-0" id="openings" name="openings"
+                                value="<%= job ? job.openings : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="expires">Expires</label>
+                            <input type="date" class="form-control border-0" id="expires" name="expires"
+                                value="<%= job ? job.expires.toISOString().split('T')[0] : '' %>" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="isTechnical">Is Technical Job</label>
+                            <select class="form-control border-0" id="isTechnical" name="isTechnical" required>
+                                <option value="true" <%=job && job.isTechnical ? 'selected' : '' %>>Yes</option>
+                                <option value="false" <%=job && !job.isTechnical ? 'selected' : '' %>>No</option>
+                            </select>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="postedBy">Posted By</label>
+                            <input type="email" class="form-control border-0" id="postedBy" name="postedBy"
+                                value="<%= job ? job.postedBy : userEmail %>" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-2">
+                    <button type="submit" class="btn btn-primary">
+                        <%= 'Add Job' %>
+                    </button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+</div>

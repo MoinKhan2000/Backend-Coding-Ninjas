@@ -1,0 +1,102 @@
+<div class="container mt-5">
+    <% if (job) { %>
+        <h1>Job ID <%= job.id %>
+        </h1>
+        <% } %>
+            <% if (errorMessage) { %>
+                <div class="alert alert-danger">
+                    <%= errorMessage %>
+                </div>
+                <% } %>
+                    <% if (job) { %>
+                        <form id="updateForm" action="/jobs/<%= job.id %>/update" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="position">Position</label>
+                                        <input type="text" class="form-control border-0" id="position" name="position"
+                                            value="<%= job.position %>" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="company">Company</label>
+                                        <input type="text" class="form-control border-0" id="company" name="company"
+                                            value="<%= job.company %>" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="location">Location</label>
+                                        <input type="text" class="form-control border-0" id="location" name="location"
+                                            value="<%= job.location %>" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="package">Package</label>
+                                        <input type="text" class="form-control border-0" id="package"
+                                            name="packagePerAnnum" value="<%= job.packagePerAnnum %>" required>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="isTechnical">Is Technical Job</label>
+                                        <select class="form-control border-0" id="isTechnical" name="isTechnical"
+                                            required>
+                                            <% if (job.isTechnical) { %>
+                                                <option selected value="true">Yes</option>
+                                                <option value="false">No</option>
+                                                <% } else { %>
+                                                    <option value="true">Yes</option>
+                                                    <option selected value="false">No</option>
+                                                    <% } %>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="skills">Skills</label>
+                                        <input type="text" class="form-control border-0" id="skills" name="skills"
+                                            value="<%= job.skills.join(', ') %>"
+                                            placeholder="Enter comma-separated values" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label for="title">Title</label>
+                                        <input type="text" class="form-control border-0" id="title" name="title"
+                                            value="<%= job.title %>" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="description">Description</label>
+                                        <textarea class="form-control border-0" id="description" name="description"
+                                            rows="7" required><%= job.description %></textarea>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="openings">Openings</label>
+                                        <input type="number" class="form-control border-0" id="openings" name="openings"
+                                            value="<%= job.openings %>" required>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="expires">Expires</label>
+                                        <input type="date" class="form-control border-0" id="expires" name="expires"
+                                            value="<%= job.expires %>" required>
+                                    </div>
+                                    <div class="form-group mb-3" hidden>
+                                        <label for="postedBy">Posted By</label>
+                                        <input type="email" class="form-control border-0" id="postedBy" name="postedBy"
+                                            value="<%= job.postedBy %>" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-2">
+                                <button type="submit" class="btn btn-primary" onclick="confirmUpdate(event)">Update
+                                    Job</button>
+                                <a href="/" class="btn btn-secondary">Cancel</a>
+                            </div>
+                        </form>
+                        <% } %>
+</div>
+
+<script>
+    function confirmUpdate(event) {
+        event.preventDefault(); // Prevent form submission
+        if (confirm('Are you sure you want to update this job?')) {
+            // Submit the form if confirmed
+            document.getElementById('updateForm').submit();
+        }
+    }
+</script>

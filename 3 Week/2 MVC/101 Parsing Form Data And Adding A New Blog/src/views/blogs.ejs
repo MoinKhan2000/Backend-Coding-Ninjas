@@ -1,0 +1,51 @@
+<!-- src/views/blogs.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            .blog-card {
+                display: flex;
+                align-items: center;
+            }
+
+            .blog-img {
+                flex-shrink: 0;
+                margin-right: 15px;
+            }
+
+            .blog-content {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <h1>Blogs</h1>
+            <div class="row">
+                <% blogs.forEach(blog=> { %>
+                    <div class="col-md-6">
+                        <div class="card mb-4 blog-card">
+                            <img src="<%= blog.img %>" class="card-img-top blog-img" style="width: 80px;"
+                                alt="<%= blog.title %>">
+                            <div class="card-body blog-content">
+                                <h5 class="card-title">
+                                    <%= blog.title %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= blog.description %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+    </body>
+
+</html>
