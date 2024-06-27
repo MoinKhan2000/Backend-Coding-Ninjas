@@ -1,5 +1,8 @@
 import express from 'express';
 import productRouter from './src/features/product/product.routes.js';
+import userRouter from './src/features/user/user.routes.js';
+import basicAuthorizer from './src/middlewares/basicAuth.middleware.js';
+
 let app = express()
 
 app.get('/', function (req, res) {
@@ -10,7 +13,8 @@ app.get('/', function (req, res) {
 app.use(express.json())
 app.use(express.query())
 // For all requests related to product, redirect to the product routes.
-app.use('/api/products', productRouter)
+app.use('/api/products', basicAuthorizer, productRouter)
+app.use('/api/users', userRouter)
 
 let port = 3000
 app.listen(port, () => {

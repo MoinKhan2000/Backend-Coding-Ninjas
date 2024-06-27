@@ -6,3 +6,8 @@ ProductController :
         Update Product Using Id - Done
         Get All Categories - Done 
         Rate Product - Done
+
+
+Usercontroller : 
+        SignUp - Email, Name, Password, TypeOfUser (customer, seller)
+        SignIn - Email, Password
