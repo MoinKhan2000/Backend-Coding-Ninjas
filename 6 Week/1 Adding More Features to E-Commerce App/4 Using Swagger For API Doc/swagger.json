@@ -1,0 +1,74 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.1",
+    "description": "Api for ecommerce application",
+    "title": "E-Commerce API"
+  },
+  "host": "localhost:3000",
+  "securityDefinitions": {
+    "JWT": {
+      "in": "header",
+      "name": "Authorization",
+      "type": "apiKey"
+    }
+  },
+  "paths": {
+    "/api/users/signin": {
+      "post": {
+        "tags": ["Users"],
+        "summary": "Login to ecommerce application",
+        "description": "Login to ecommerce application",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User Credentials",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User logged in successfully"
+          },
+          "400": {
+            "description": "Incorrect username or password"
+          }
+        }
+      }
+    },
+
+    "/api/products/": {
+      "get": {
+        "tags": ["Products"],
+        "summary": "Get all the products available.",
+        "description": "API to get all the products available in the application.",
+        "security": [{ "JWT": {} }],
+        "responses": {
+          "200": {
+            "description": "Get all the products availble"
+          },
+          "401": {
+            "description": "Unautherized"
+          }
+        }
+      }
+    },
+
+    "/api/products": {
+      "post": {
+        "tags": ["Products"]
+      }
+    }
+  }
+}

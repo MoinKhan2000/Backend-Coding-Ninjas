@@ -1,0 +1,14 @@
+we started this project from below headings and completed the project.
+
+1. Folder structure
+2. Route configuration.
+3. Cerating APIs.
+4. different API methods.
+5. Middlewares.
+6. Route parameters.
+7. Query parameters
+8. Testing API using postman and thunderclient.
+9. Document API using Swagger.js.
+10. Cors understanding. 
+11. Logging the information to loggerr.txt .
+12. Error handling.   
