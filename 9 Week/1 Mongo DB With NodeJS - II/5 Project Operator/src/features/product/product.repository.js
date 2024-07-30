@@ -89,9 +89,14 @@ class ProductRepository {
         findOperation = findOperation.skip(skip);
       }
 
-      // Execute the query
-      const result = await findOperation.toArray();
+      // Execute the query Normally
+      // const result = await findOperation.toArray();
+      // return result;
+
+      // Execute the query usign project
+      const result = await findOperation.project({ name: 1, price: 1, _id: 0 }).toArray();
       return result;
+
     } catch (error) {
       console.log(error);
       throw new ApplicationError('Something went wrong!', 500);

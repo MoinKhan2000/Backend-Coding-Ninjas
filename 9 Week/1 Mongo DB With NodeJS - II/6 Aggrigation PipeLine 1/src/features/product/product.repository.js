@@ -6,6 +6,7 @@ class ProductRepository {
   constructor() {
     this.collection = "products";
   }
+
   async addProduct(newProduct) {
     try {
       const db = getDB();
@@ -89,9 +90,14 @@ class ProductRepository {
         findOperation = findOperation.skip(skip);
       }
 
-      // Execute the query
-      const result = await findOperation.toArray();
+      // Execute the query Normally
+      // const result = await findOperation.toArray();
+      // return result;
+
+      // Execute the query usign project
+      const result = await findOperation.project({ name: 1, price: 1, _id: 0 }).toArray();
       return result;
+
     } catch (error) {
       console.log(error);
       throw new ApplicationError('Something went wrong!', 500);
@@ -113,8 +119,7 @@ class ProductRepository {
   //       throw new ApplicationError('User not found', 404)
   //     }
 
-  //     // Check if the user already rated the product if already rated then updating the rating.
-
+  // Check if the user already rated the product if already rated then updating the rating.
   //     //? 1 Find the rating.
   //     const alreadyRated = product?.rating?.find(u => u.userId === userId)
   //     if (alreadyRated) {
@@ -142,7 +147,6 @@ class ProductRepository {
   //         }
   //       )
   //     }
-
   //     return true
   //   } catch (error) {
   //     throw new ApplicationError('Something went wrong!', 500)
@@ -161,7 +165,6 @@ class ProductRepository {
       if (!user) {
         throw new ApplicationError('User not found', 404)
       }
-
 
       //? 1. Remove existing entry of rating
       await collection.updateOne(
@@ -189,7 +192,28 @@ class ProductRepository {
       throw new ApplicationError('Something went wrong!', 500)
     }
   }
+
+  async averagePrice() {
+    try {
+      const db = getDB();
+      return await db.collection(this.collection)
+        .aggregate([
+          //  Stage 1: Get average price per category.
+          {
+            $group: {
+              _id: "$category",
+              averagePrice: { $avg: "$price" }
+            }
+          }
+        ]).toArray()
+    } catch (error) {
+      throw new ApplicationError('could not find product', 404)
+    }
+  }
+
 }
+
+
 
 
 export default ProductRepository

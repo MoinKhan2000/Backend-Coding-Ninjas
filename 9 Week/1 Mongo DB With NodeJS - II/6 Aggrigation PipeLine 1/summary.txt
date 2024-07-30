@@ -1,0 +1,15 @@
+We started the project in the following steps.
+
+1. Folder Structre.
+2. Route Configuration.
+3. Creating API's.
+4. Different API Methods.
+5. Middlewares. 
+6. Route Parameters.
+7. Query Parameters.
+8. Testing API using Postman.
+9. Securing API using JWT Token.
+10. Documenting API Using SwaggerJS. 
+11. CORS Configuration. 
+12. Logging the key points of the request to the logger.txt.
+13. Error handling.
