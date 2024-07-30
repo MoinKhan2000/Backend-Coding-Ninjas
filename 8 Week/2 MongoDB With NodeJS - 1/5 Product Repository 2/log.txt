@@ -1,0 +1,202 @@
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-08T06:15:37.376Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-08T06:18:26.312Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-08T06:18:29.783Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/product/rateproduct?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:50:09.614Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rateproduct?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:50:39.699Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-08T06:51:02.282Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rateproduct?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:51:10.857Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rateproduct?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:51:17.279Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/product/rateproduct?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:51:38.409Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/product/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:13.392Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/product/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:14.017Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/product/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:28.075Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:51.549Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:52.525Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:53.667Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:52:55.067Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:02.886Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:03.500Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:03.689Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/productss/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:03.922Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=3&rating=4 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:12.880Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:20.087Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=323&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:25.980Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=323&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:44.581Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=323&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:45.466Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=323&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:55:47.438Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=323&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:56:14.766Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=232&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:56:31.176Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=232&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:56:32.090Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=232&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:56:32.972Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=232&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:57:04.793Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=232&productId=3&rating=10 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:59:15.261Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=3&rating=1230 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:59:30.178Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1230 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:59:34.163Z"}
+{"level":"info","message":"\n7/8/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-08T06:59:42.369Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /favicon.ico \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:09:39.654Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-09T04:11:17.774Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:11:51.383Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:12:03.959Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:12:54.499Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:13:00.606Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:24.714Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:25.528Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:25.977Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:26.157Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:27.504Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:15:28.249Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:36:15.271Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:36:47.116Z"}
+{"level":"info","message":"\n7/9/2024\n\n req URL: /api/products/rate?userId=2&productId=3232&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-09T04:36:52.835Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:41:23.173Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:41:52.849Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:42:05.070Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:42:35.027Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:42:39.129Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:43:56.100Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:44:10.293Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:45:06.536Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:45:36.740Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:46:54.833Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:47:09.538Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:47:32.695Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:48:09.726Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:48:37.960Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:51:43.064Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:52:55.520Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:54:10.541Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:54:54.549Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:55:33.138Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:55:58.223Z"}
+{"level":"info","message":"\n7/22/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-22T07:56:37.633Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:33:36.372Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:34:11.961Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:34:33.843Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:34:55.575Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:38:23.452Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:38:25.466Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:40:12.326Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:47:35.390Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:47:36.744Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:48:12.832Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:48:24.246Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:49:46.953Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T03:50:25.113Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-23T03:53:58.079Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-23T03:54:31.685Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-23T03:55:34.832Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T05:19:16.834Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T05:19:27.816Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:12:22.835Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"email\":\"mkhan@gmail.com\",\"password\":\"mkhan\"}","service":"request-logging","timestamp":"2024-07-23T06:12:26.118Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:12:32.617Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizbsa\"}","service":"request-logging","timestamp":"2024-07-23T06:12:37.402Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizbssa\"}","service":"request-logging","timestamp":"2024-07-23T06:12:39.555Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:12:41.868Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:12:57.730Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signup \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:13:13.555Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:13:20.890Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizbssa\"}","service":"request-logging","timestamp":"2024-07-23T06:13:23.451Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:13:40.459Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:14:10.904Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:14:20.218Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizsba\"}","service":"request-logging","timestamp":"2024-07-23T06:14:23.561Z"}
+{"level":"info","message":"\n7/23/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-23T06:14:27.752Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:53:57.714Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-24T04:54:05.717Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:54:31.746Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:55:52.798Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:57:55.455Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:59:22.375Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T04:59:36.662Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:00:06.863Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:00:19.038Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:00:43.647Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:01:16.093Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:01:39.862Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:01:54.018Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:03:03.073Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:03:19.147Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:05:03.356Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:05:30.707Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:06:35.933Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:06:44.540Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:06:49.804Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:07:24.788Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:08:11.081Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:08:16.500Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:08:19.366Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:10:05.042Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:10:31.143Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:11:03.106Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:11:16.695Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:11:30.133Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:12:06.372Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:13:11.981Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:14:11.150Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:15:25.108Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:18:21.098Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:20:06.803Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:20:28.787Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:22:10.188Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:22:44.749Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:23:08.828Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:23:40.012Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:24:22.360Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:25:28.134Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:26:55.108Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:27:31.261Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:27:43.462Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:27:53.703Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:28:45.013Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:28:48.049Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:28:49.154Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:28:58.967Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:29:36.334Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:30:54.250Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:26.106Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:27.195Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:30.564Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:32.284Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:51.065Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:53.168Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:31:54.082Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08ac209cafacb5bd97fec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:32:12.702Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:32:15.741Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:32:28.181Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:32:29.274Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:32:53.446Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:33:31.330Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:33:32.632Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:33:32.849Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/users/signin \n reqBody: {\"name\":\"Mizbah Anjum\",\"email\":\"misba@gmail.com\",\"password\":\"mizba\"}","service":"request-logging","timestamp":"2024-07-24T05:44:18.330Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category=Electronics&minPrice=0&maxPrice=5000 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:44:38.024Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category=Electronics&minPrice=0&maxPrice=1000000 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:44:49.621Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice=1000000 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:44:53.112Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:45:00.389Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:45:31.403Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:45:57.838Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:45:58.841Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:46:18.997Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:46:43.092Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:47:10.113Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:47:30.966Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:48:07.630Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:48:12.220Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:48:22.686Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:48:58.624Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category=60000&minPrice=0&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:49:15.796Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=60000&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:49:26.883Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:49:31.056Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:49:49.389Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:49:58.609Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:50:12.961Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/ \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:50:16.417Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice&maxPrice \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:50:23.466Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/filter?category&minPrice=5000&maxPrice=20000 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T05:50:39.177Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/rate?userId=669f49f939a1f81aa278230e&productId=66a09614efdc966732385d51&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:01:21.609Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/rate?userId=669f49f939a1f81aa278230e&productId=66a09614efdc966732385d51&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:02:16.463Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/rate?userId=669f49f939a1f81aa278230e&productId=66a09614efdc966732385d51&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:02:37.815Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/rate?userId=669f49f939a1f81aa278230e&productId=66a09614efdc966732385d51&rating=1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:02:54.704Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:03:42.850Z"}
+{"level":"info","message":"\n7/24/2024\n\n req URL: /api/products/66a08c40e50f0fe2ffe458ec \n reqBody: {}","service":"request-logging","timestamp":"2024-07-24T06:03:56.978Z"}

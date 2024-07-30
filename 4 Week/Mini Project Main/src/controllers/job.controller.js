@@ -159,7 +159,7 @@ class JobsController {
         const applicant = { name, email, mobile, yearOfGraduation, cgpa, resumeUrl }
         let result = JobModel.applyToJob(jobId, applicant)
         if (result) {
-            res.render(`apply`, { job: jobFound, errorMessage: 'Success : Submitted Successfully We will update you throw your email.', userEmail: req.session.userEmail })
+            res.render(`apply`, { job: jobFound, errorMessage: 'Success : Submitted Successfully We will update you throw your email.', userEmail: req.session.userEmail, user: null })
             sendApplicationReceivedEmail(
                 applicant.email,
                 applicant.name,

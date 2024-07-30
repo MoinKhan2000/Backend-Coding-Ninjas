@@ -1,0 +1,52 @@
+{"level":"info","message":"\n7/10/2024\n\n req URL: /:id \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:27:11.106Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /:id \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:27:34.311Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /:id \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:27:53.849Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:28:03.259Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /2 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:28:07.713Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:28:10.384Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform\"}","service":"request-logging","timestamp":"2024-07-10T07:29:22.216Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:29:35.720Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /2 \n reqBody: {\"content\":\"A good platform\"}","service":"request-logging","timestamp":"2024-07-10T07:29:41.895Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform\"}","service":"request-logging","timestamp":"2024-07-10T07:29:46.664Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:30:00.354Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:30:03.424Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:30:49.086Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:01.905Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:02.607Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:03.087Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:13.063Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:14.439Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /2 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:31:18.551Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"Updated one\"}","service":"request-logging","timestamp":"2024-07-10T07:32:05.623Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:32:09.575Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /3 \n reqBody: {\"content\":\"Updated one\"}","service":"request-logging","timestamp":"2024-07-10T07:32:14.575Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:32:19.903Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /3 \n reqBody: {\"content\":\"\"}","service":"request-logging","timestamp":"2024-07-10T07:32:27.296Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:32:29.712Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1/paginated?page=1&limit=3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:44.030Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1/paginated?page=1&limit=3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:47.857Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T07:33:53.167Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:56.688Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:57.087Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:57.408Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:57.768Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:58.145Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:58.498Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:58.769Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:59.008Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:59.216Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:59.408Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {\"content\":\"A good platform 2\"}","service":"request-logging","timestamp":"2024-07-10T07:33:59.617Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1/paginated?page=1&limit=3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:34:02.727Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1/paginated?page=2&limit=3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:34:11.240Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1/paginated?page=3&limit=3 \n reqBody: {\"content\":\"Updated one 2\"}","service":"request-logging","timestamp":"2024-07-10T07:34:18.439Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T11:05:50.719Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /all \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T11:21:55.769Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /all \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T11:28:49.006Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T13:52:41.242Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T13:53:48.436Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T13:54:47.158Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T13:59:39.897Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /all \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T14:00:17.743Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: / \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T14:02:48.874Z"}
+{"level":"info","message":"\n7/10/2024\n\n req URL: /1 \n reqBody: {}","service":"request-logging","timestamp":"2024-07-10T14:08:16.955Z"}

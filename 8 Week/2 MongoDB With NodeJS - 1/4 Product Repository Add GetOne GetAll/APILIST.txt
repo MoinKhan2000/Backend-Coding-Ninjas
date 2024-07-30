@@ -1,0 +1,13 @@
+ProductController : 
+        Get All Products - Done 
+        Get Product By Id - Done 
+        Get Product By Name - Done
+        Get Product by Category - Done
+        Update Product Using Id - Done
+        Get All Categories - Done 
+        Rate Product - Done
+
+
+Usercontroller : 
+        SignUp - Email, Name, Password, TypeOfUser (customer, seller)
+        SignIn - Email, Password
