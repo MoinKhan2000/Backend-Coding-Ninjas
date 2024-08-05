@@ -1,0 +1,93 @@
+ProductController : 
+        Get All Products - Done 
+        Get Product By Id - Done 
+        Get Product By Name - Done
+        Get Product by Category - Done
+        Update Product Using Id - Done
+        Get All Categories - Done 
+        Rate Product - Done
+
+Usercontroller :
+        SignUp - Email, Name, Password, TypeOfUser (customer, seller)
+        SignIn - Email, Password
+
+// Aggregation PipeLines - 1
+{
+        _id:Cat1,
+        averagePrice:5000
+}
+
+// Aggregation PipeLines - 2
+db.products.aggregate([
+        {
+                $unwind:"$ratings"
+        },
+        {
+                $group:{
+                        _id : "$name"
+                        averageRating:{$avg:"$rating.rating"}
+                }
+        }
+])
+
+db.products.aggregate([
+        {
+                $unwind:"$rating"
+        },
+        {
+                $group:{
+                        _id : "$name",
+                        averageRating:{$avg:"$rating.rating"},count:{$sum:"$rating"}
+                }
+        }
+])
+
+db.products.aggregate([
+        // Stage Project name, and averate Rating.
+        $project:{
+                name:1, 
+                countOfRating:{
+                        $size:"$rating"
+                }
+        }
+])
+
+db.products.aggregate([
+        {
+                $project:{
+                        name:1,
+                        countOfRating : {
+                                $size : "$rating.rating"
+                        },
+                        averagePrice:{
+                                $avg:"$rating.rating"
+                        }
+                }
+        }
+])
+
+db.products.aggregate([
+        // 1. Project Name of the product and countOfRating
+        {
+                $project:{
+                        name:1, countOfRating:{
+                                $cond:{
+                                        if:{$isArray:"$rating"}, then:{$size:"$rating"},
+                                        else:0
+                                }
+                        }
+                }
+        },
+        
+        // 2. Stage 2 : Sort the collection on the basis of rating count.
+        {
+                $sort:{
+                        countOfRating : -1
+                }
+        }
+        , 
+        // 3. Limit to just 1 item in result.
+        {
+                $limit:1
+        }
+])
