@@ -32,5 +32,8 @@ export class LikeController {
     } catch (error) {
       throw new ApplicationError("Something went wrong", 500)
     }
+    finally {
+      next()
+    }
   }
 }
