@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Chat-Room App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="login-container">
+            <!-- form to enter username and room ID -->
+            <form id="login-form">
+                <input type="text" id="username-input" placeholder="Enter your username" required>
+                <input type="text" id="room-input" placeholder="Enter room ID" required>
+                <button id='start-chatting' type="submit">Start Chatting</button>
+            </form>
+        </div>
+
+        <div id="chat-container" style="display:none;">
+            <!-- message display area -->
+            <div id="message-display">
+                <!-- Messages will be appended here -->
+            </div>
+
+            <!-- form to send messages -->
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Type your message" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io.connect('http://localhost:3000');
+
+            const loginForm = document.getElementById('login-form');
+            const chatContainer = document.getElementById('chat-container');
+            const messageDisplay = document.getElementById('message-display');
+            const messageForm = document.getElementById('message-form');
+            const messageInput = document.getElementById('message-input');
+
+            let username = '';
+            let room = '';
+
+            // Handle login form submission
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                username = document.getElementById('username-input').value;
+                room = document.getElementById('room-input').value;
+
+                // Emit join event to the server
+                socket.emit('join', { username, room });
+
+                // Hide login and show chat container
+                loginForm.style.display = 'none';
+                chatContainer.style.display = 'block';
+
+                // Display a welcome message
+                const welcomeMessage = `Welcome to room ${room}, ${username}!`;
+                displayMessage(welcomeMessage, 'system');
+            });
+
+            // Handle message form submission
+            messageForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const message = messageInput.value;
+                if (message.trim()) {
+                    // Emit sendMessage event to the server
+                    socket.emit('sendMessage', { username, room, message });
+                    // Display own message
+                    displayMessage(`${username}: ${message}`, 'self');
+                    messageInput.value = '';
+                }
+            });
+
+            // Listen for messages from the server
+            socket.on('message', (data) => {
+                displayMessage(`${data.username}: ${data.message}`, 'other');
+            });
+
+            // Notify when someone joins the room
+            socket.on('userJoined', (data) => {
+                const joinMessage = `${data.username} has joined the room!`;
+                displayMessage(joinMessage, 'system');
+            });
+
+            // Function to display messages in the chat
+            function displayMessage(message, type) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                if (type === 'system') {
+                    messageElement.classList.add('system-message');
+                } else if (type === 'self') {
+                    messageElement.classList.add('self-message');
+                } else {
+                    messageElement.classList.add('other-message');
+                }
+                messageElement.textContent = message;
+                messageDisplay.appendChild(messageElement);
+                messageDisplay.scrollTop = messageDisplay.scrollHeight;
+            }
+
+            // Join room and broadcast messages
+            socket.on('join', (data) => {
+                socket.join(data.room);
+                socket.to(data.room).emit('userJoined', { username: data.username });
+            });
+        </script>
+    </body>
+
+</html>
