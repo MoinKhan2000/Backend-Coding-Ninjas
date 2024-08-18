@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moin Khan - Inkoop Assignment</title>
+  </head>
+
+  <body>
+    <input type="number" placeholder='enter number here' />
+    <div id="msg"></div>
+
+    <script>
+      const input = document.querySelector('input[type="number"]');
+      const msg = document.getElementById('msg');
+
+      input.addEventListener('input', () => {
+        const value = parseInt(input.value);
+
+        if (isNaN(value) || input.value === '') {
+          msg.textContent = '';
+        } else if (value < 1) {
+          msg.textContent = 'enter a positive value';
+        } else {
+          const nextEven1 = value + 2;
+          const nextEven2 = value + 4;
+          const nextEven3 = value + 6;
+          msg.textContent = `${nextEven1}, ${nextEven2}, ${nextEven3}`;
+        }
+      });
+    </script>
+  </body>
+
+</html>
+
+<!-- https://careers.inkoop.io/job_posts/js-developer-intern/applicants/a4MV9zzGGWgofkAaaohYkrTA -->
