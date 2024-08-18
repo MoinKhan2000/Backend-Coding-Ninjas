@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Task Management App</title>
+    </head>
+
+    <body>
+        <div id="task-form">
+            <!-- Create a form to add new tasks -->
+            <form id="create-task-form">
+                <input type="text" id="task-text" placeholder="Enter a new task" required>
+                <button id="create-task" type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <div id="task-list">
+            <!-- Tasks will be displayed here -->
+        </div>
+
+        <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io.connect('http://localhost:3000');
+
+            // Reference to the form and task list elements
+            const taskForm = document.getElementById('create-task-form');
+            const taskInput = document.getElementById('task-text');
+            const taskList = document.getElementById('task-list');
+
+            // Handle form submission to add a new task
+            taskForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const taskText = taskInput.value.trim();
+
+                if (taskText !== '') {
+                    const task = {
+                        id: Date.now(), // Generate a unique ID for the task
+                        text: taskText
+                    };
+
+                    // Emit the addTask event with the task data
+                    socket.emit('addTask', task);
+
+                    // Clear the input field
+                    taskInput.value = '';
+                }
+            });
+
+            // Listen for addTask events from the server
+            socket.on('addTask', (task) => {
+                // Create a new task element
+                const taskElement = document.createElement('div');
+                taskElement.id = task.id;
+                taskElement.textContent = task.text;
+
+                // Create a delete button for the task
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = () => {
+                    // Emit the deleteTask event when delete button is clicked
+                    socket.emit('deleteTask', task.id);
+                };
+
+                // Create an update button for the task
+                const updateButton = document.createElement('button');
+                updateButton.textContent = 'Update';
+                updateButton.onclick = () => {
+                    const newTaskText = prompt("Update the task:", task.text);
+                    if (newTaskText && newTaskText.trim()) {
+                        const updatedTask = { ...task, text: newTaskText.trim() };
+                        // Emit the updateTask event when update button is clicked
+                        socket.emit('updateTask', updatedTask);
+                    }
+                };
+
+                // Append the buttons to the task element
+                taskElement.appendChild(updateButton);
+                taskElement.appendChild(deleteButton);
+
+                // Append the task element to the task list
+                taskList.appendChild(taskElement);
+            });
+
+            // Listen for deleteTask events from the server
+            socket.on('deleteTask', (taskId) => {
+                // Find and remove the task element by its ID
+                const taskElement = document.getElementById(taskId);
+                if (taskElement) {
+                    taskElement.remove();
+                }
+            });
+
+            // Listen for updateTask events from the server
+            socket.on('updateTask', (updatedTask) => {
+                // Find the task element by its ID
+                const taskElement = document.getElementById(updatedTask.id);
+                if (taskElement) {
+                    taskElement.textContent = updatedTask.text;
+
+                    // Recreate the update and delete buttons
+                    const updateButton = document.createElement('button');
+                    updateButton.textContent = 'Update';
+                    updateButton.onclick = () => {
+                        const newTaskText = prompt("Update the task:", updatedTask.text);
+                        if (newTaskText && newTaskText.trim()) {
+                            const newUpdatedTask = { ...updatedTask, text: newTaskText.trim() };
+                            socket.emit('updateTask', newUpdatedTask);
+                        }
+                    };
+
+                    const deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'Delete';
+                    deleteButton.onclick = () => {
+                        socket.emit('deleteTask', updatedTask.id);
+                    };
+
+                    // Append the buttons to the task element
+                    taskElement.appendChild(updateButton);
+                    taskElement.appendChild(deleteButton);
+                }
+            });
+        </script>
+    </body>
+
+</html>
