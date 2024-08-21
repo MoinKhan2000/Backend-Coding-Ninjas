@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="app-container">
+      <div class="dummy-friends-container animate__animated animate__fadeInUp">
+        <div class="friends-header">
+          <i class="fas fa-user-friends"></i> Friends List
+        </div>
+        <ul class="dummy-friends-list">
+          <li>Your Online Friends Will Be Shown Here</li>
+        </ul>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-header">
+          <i class="fas fa-comments"></i> Chat App - <span id="room-name">Room Name</span>
+        </div>
+        <div class="chat-messages" id="message-list">
+          <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-footer">
+          <input id="message-input" type="text" placeholder="Type a message...">
+          <button type="submit" id="send-message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io.connect('http://localhost:3000');
+      const userName = prompt('Please enter your username');
+      socket.emit('new_user', userName);
+
+      let currentRoom = null;
+      let currentFriend = null;
+
+      // Handle online users event from the server
+      socket.on('online_users', (onlineUsers) => {
+        updateFriendsList(onlineUsers);
+      });
+
+      // Function to update the friends list
+      function updateFriendsList(onlineUsers) {
+        const friendsList = document.querySelector('.dummy-friends-list');
+        friendsList.innerHTML = ''; // Clear the list
+
+        onlineUsers.forEach((friendName) => {
+          if (friendName !== userName) {
+            addUserToFriendList(friendName);
+          }
+        });
+      }
+
+      // Function to add a new user to the friends list
+      function addUserToFriendList(friendName) {
+        const friendsList = document.querySelector('.dummy-friends-list');
+        const userElement = document.createElement('li');
+
+        // Set the content with the friend's name
+        userElement.innerHTML = `<i class="fas fa-user-circle"></i> ${friendName}`;
+        userElement.addEventListener('click', () => {
+          loadChat(friendName);
+        });
+
+        friendsList.appendChild(userElement);
+      }
+
+      // Function to load chat history and join the room
+      function loadChat(friendName) {
+        if (currentFriend === friendName) return; // Prevent reloading the same chat
+
+        // Leave the current room before switching
+        if (currentRoom) {
+          socket.emit('leave_room', currentRoom);
+        }
+
+        currentFriend = friendName;
+        currentRoom = [userName, friendName].sort().join('-');  // Generate a unique room name
+
+        // Update the room name in the chat header
+        document.getElementById('room-name').textContent = currentRoom;
+
+        socket.emit('join_room', currentRoom);  // Join the room
+        socket.emit('get_msg', { room: currentRoom });  // Request chat history for the room
+      }
+
+      // Listen for load_chat event from the server and display messages
+      socket.on('load_chat', (messages) => {
+        clearChat(); // Clear previous messages
+        messages.forEach(message => {
+          console.log(message);
+          displayMessage(message.sender, message.message);
+        });
+      });
+
+      // Clear the chat messages
+      function clearChat() {
+        const messageList = document.getElementById('message-list');
+        messageList.innerHTML = '';
+      }
+
+      // Function to display a message in the chat
+      function displayMessage(user, message) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message');
+
+        if (user === userName) {
+          messageElement.classList.add('message-right');
+        } else {
+          messageElement.classList.add('message-left');
+        }
+
+        messageElement.textContent = `${user}: ${message}`;
+        const messageList = document.getElementById('message-list');
+        messageList.appendChild(messageElement);
+
+        // Scroll to the bottom of the chat
+        messageList.scrollTop = messageList.scrollHeight;
+      }
+
+      // Send message when the button is clicked
+      const sendMessageButton = document.getElementById('send-message');
+      const messageInput = document.getElementById('message-input');
+
+      sendMessageButton.addEventListener('click', sendMessage);
+
+      // Handle the Enter key to send the message
+      messageInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+          sendMessage();
+        }
+      });
+
+      function sendMessage() {
+        const message = messageInput.value.trim();
+        if (message && currentRoom && currentFriend) {
+          socket.emit('new_message', { message, room: currentRoom, receiver: currentFriend });
+          messageInput.value = '';  // Clear the input field
+          displayMessage(userName, message);  // Display the message in the chat
+        } else {
+          alert('Please select a friend to chat with.');
+        }
+      }
+
+      // Listen for new message event from the server
+      socket.on('message_received', (data) => {
+        if (data.room === currentRoom) {  // Only display if the message is for the current room
+          displayMessage(data.sender, data.message);
+        }
+      });
+
+    </script>
+
+  </body>
+
+</html>

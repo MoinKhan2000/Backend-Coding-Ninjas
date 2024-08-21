@@ -1,0 +1,22 @@
+{
+  "name": "chatter_app",
+  "version": "1.0.0",
+  "description": "A Coding Ninjas Practice Project Chatter App - Using Node JS, ExpressJS, MongoDB and some of the designning technologies.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "None"
+  },
+  "author": "Moin Khan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3",
+    "socket.io": "^4.7.5"
+  }
+}
