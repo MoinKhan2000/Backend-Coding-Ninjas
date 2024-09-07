@@ -10,7 +10,6 @@ export default class UserRepository {
     try {
       // create instance of model.
       console.log(user);
-
       const newUser = new UserModel(user)
       console.log(newUser);
 

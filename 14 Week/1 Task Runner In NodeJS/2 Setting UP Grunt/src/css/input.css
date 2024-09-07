@@ -1,0 +1,76 @@
+/* Basic styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ababab;
+  overflow: hidden;
+}
+
+/* Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #003b56; /* Dark color for the sidebar */
+  color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar .avatar-placeholder {
+  background-color: #25d366; /* WhatsApp green for avatar background */
+}
+
+.sidebar .online-users h4 {
+  margin-top: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+#user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#user-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#user-list li .avatar {
+  background-color: #25d366; /* WhatsApp green for active users */
+  margin-right: 10px;
+}
